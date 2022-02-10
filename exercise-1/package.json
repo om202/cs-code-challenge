@@ -1,0 +1,16 @@
+{
+  "name": "consume-rest",
+  "version": "1.0.0",
+  "description": "Coding exercise",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node app"
+  },
+  "author": "Omprakash",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2"
+  }
+}
