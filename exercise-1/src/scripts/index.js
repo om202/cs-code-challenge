@@ -5,6 +5,6 @@ requirejs(['external/handlebars'], function(HandleBars){
   
   var template = HandleBars.compile("Handlebars <b>{{doesWhat}}</b>");
 
-  console.log(template({ doesWhat: "rocks!" }));
+  console.log(template({ doesWhat: "rocks" }));
   
 })
