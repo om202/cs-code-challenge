@@ -1,4 +1,74 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
 .title-1 {
     font-size: x-large;
     color: orange;
 }
+
+#main {
+    padding: 0;
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    flex-flow: wrap;
+}
+
+.user-list {
+    background-color: rgb(243, 243, 243);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    width: 28rem;
+    box-sizing: border-box;
+    border-radius: 0.7rem;
+}
+
+.user-avatar {
+    border: 0.5rem solid white;
+    margin-right: 1rem;
+    border-radius: 0.7rem;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-name {
+    font-size: 1.4rem;
+    color: orange;
+}
+
+.user-id {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
+}
+
+.show-details {
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(4, 212, 212);
+    color: white;
+    border: none;
+    width: 9rem;
+    border-radius: 0.7rem;
+}
+
+
+
+
+
+

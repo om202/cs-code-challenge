@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,24 @@
     <link rel="stylesheet" type="text/css" href="./scripts/index.css" media="screen">
     <script data-main="scripts/index" src="scripts/external/requirejs.js"></script>
 </head>
+
 <body>
     <span class="title-1">Exercise 1: Consuming RESTful API data</span>
+    <br>
+    Faker cloud URL for user images has its server down.
+    <ul id="main"></ul>
+
+    <script id="exercise-1" type="text/x-handlebars-template">
+            <li id="user{{id}}" class='user-list'>
+                <img class="user-avatar" src="{{avatar}}" width="128px">
+                <div class='user-details'>
+                    <span class="user-id">{{id}}</span>
+                    <span class="user-name">{{name}}</span>
+                    <span class="user-created-at">{{createdAt}}</span>
+                    <button class="show-details">Show details</button>
+                </div class='user-details'>
+            </li>
+    </script>
 </body>
+
 </html>
