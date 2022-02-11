@@ -67,6 +67,11 @@ body {
     border-radius: 0.7rem;
 }
 
+.show-details:hover {
+    cursor: pointer;
+    background-color: rgb(212, 53, 4);
+}
+
 
 
 

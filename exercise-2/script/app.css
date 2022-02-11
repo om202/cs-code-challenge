@@ -9,7 +9,7 @@ body {
 
 .container {
   display: flex;
-  width: 600px;
+  width: 420px;
   flex-direction: column;
   margin-top: 100px;
 }
@@ -52,6 +52,10 @@ button :hover {
   color: #333;
 }
 
+button:focus {
+  border: 2px solid lightgreen;
+}
+
 /* Heading */
 h3,
 label[for='new-task'] {
@@ -77,8 +81,13 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"] :focus {
-  color: #333;
+input[type="text"]:focus {
+  color: rgb(5, 5, 5);
+  border: 3px solid lightgreen !important;
+}
+
+input[type="checkbox"]:focus {
+  border: 3px solid lightgreen !important;
 }
 
 /* New Task */

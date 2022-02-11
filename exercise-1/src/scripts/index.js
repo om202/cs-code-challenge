@@ -1,13 +1,9 @@
-requirejs(["external/handlebars"], function (HandleBars) {
+if (typeof define !== 'function') {
+  var define = require('amdefine')(module);
+}
 
-  function showDetails(id){
-    let ulElement = document.getElementById(id);
-    let createdAt = ulElement.getElementsByClassName('user-created-at')
-    let userId = ulElement.getElementsByClassName('user-id')
-  }
-
+define(["external/handlebars"], function (HandleBars) {
   function generateHTML(users) {
-
     let rawTemplate = document.getElementById("exercise-1").innerHTML;
 
     let template = HandleBars.compile(rawTemplate);
@@ -30,3 +26,18 @@ requirejs(["external/handlebars"], function (HandleBars) {
       }
     });
 });
+
+function showDetails(id, btn) {
+  let ulElement = document.getElementById("user" + id);
+  let createdAt = ulElement.getElementsByClassName("user-created-at")[0];
+  let userId = ulElement.getElementsByClassName("user-id")[0];
+  if (createdAt.hidden) {
+    createdAt.hidden = false;
+    userId.hidden = false;
+    btn.innerText = 'Hide details'
+  } else {
+    createdAt.hidden = true;
+    userId.hidden = true;
+    btn.innerText = 'Show details'
+  }
+}

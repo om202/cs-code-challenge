@@ -22,11 +22,15 @@ const createNewTaskElement = function (taskString) {
 };
 
 const addTask = function () {
-  let listItemName = taskInput.value || "New Item";
-  listItem = createNewTaskElement(listItemName);
-  incompleteTasksHolder.appendChild(listItem);
-  bindTaskEvents(listItem, taskCompleted);
-  taskInput.value = "";
+  let listItemName = taskInput.value || "";
+  if(listItemName.trim().length===0 || listItemName===null) {
+    window.alert("Input is empty!")
+  }else {
+    listItem = createNewTaskElement(listItemName);
+    incompleteTasksHolder.appendChild(listItem);
+    bindTaskEvents(listItem, taskCompleted);
+    taskInput.value = "";
+  }
 };
 
 const editTask = function () {
